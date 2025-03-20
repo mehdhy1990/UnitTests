@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YPpBYJjaWwQ=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\mehdi\\RiderProjects\\Tests\\TestProject1\\TestProject1.csproj",
+  "dgSpecHash": "whSJftSMF8I=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\mehdi\\RiderProjects\\Tests\\tests1\\TestProject1\\TestProject1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mehdi\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\mehdi\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",
@@ -94,5 +94,15 @@
     "C:\\Users\\mehdi\\.nuget\\packages\\xunit.extensibility.execution\\2.5.3\\xunit.extensibility.execution.2.5.3.nupkg.sha512",
     "C:\\Users\\mehdi\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.3\\xunit.runner.visualstudio.2.5.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\mehdi\\RiderProjects\\Tests\\tests1\\CalculatorLibrary\\CalculatorLibrary.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\mehdi\\RiderProjects\\Tests\\tests1\\CalculatorLibrary\\CalculatorLibrary.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

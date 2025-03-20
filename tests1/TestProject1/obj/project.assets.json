@@ -5510,12 +5510,13 @@
     },
     "CalculatorLibrary/1.0.0": {
       "type": "project",
-      "path": "../CalculatorLibrary/CalculatorLibrary.csproj",
-      "msbuildProject": "../CalculatorLibrary/CalculatorLibrary.csproj"
+      "path": "../../src/CalculatorLibrary/CalculatorLibrary.csproj",
+      "msbuildProject": "../../src/CalculatorLibrary/CalculatorLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "C:\\Users\\mehdi\\RiderProjects\\Tests\\tests1\\CalculatorLibrary\\CalculatorLibrary.csproj",
       "CalculatorLibrary >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
       "coverlet.collector >= 6.0.0",
@@ -5530,11 +5531,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mehdi\\RiderProjects\\Tests\\TestProject1\\TestProject1.csproj",
+      "projectUniqueName": "C:\\Users\\mehdi\\RiderProjects\\Tests\\tests1\\TestProject1\\TestProject1.csproj",
       "projectName": "TestProject1",
-      "projectPath": "C:\\Users\\mehdi\\RiderProjects\\Tests\\TestProject1\\TestProject1.csproj",
+      "projectPath": "C:\\Users\\mehdi\\RiderProjects\\Tests\\tests1\\TestProject1\\TestProject1.csproj",
       "packagesPath": "C:\\Users\\mehdi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mehdi\\RiderProjects\\Tests\\TestProject1\\obj\\",
+      "outputPath": "C:\\Users\\mehdi\\RiderProjects\\Tests\\tests1\\TestProject1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5556,8 +5557,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\mehdi\\RiderProjects\\Tests\\CalculatorLibrary\\CalculatorLibrary.csproj": {
-              "projectPath": "C:\\Users\\mehdi\\RiderProjects\\Tests\\CalculatorLibrary\\CalculatorLibrary.csproj"
+            "C:\\Users\\mehdi\\RiderProjects\\Tests\\src\\CalculatorLibrary\\CalculatorLibrary.csproj": {
+              "projectPath": "C:\\Users\\mehdi\\RiderProjects\\Tests\\src\\CalculatorLibrary\\CalculatorLibrary.csproj"
+            },
+            "C:\\Users\\mehdi\\RiderProjects\\Tests\\tests1\\CalculatorLibrary\\CalculatorLibrary.csproj": {
+              "projectPath": "C:\\Users\\mehdi\\RiderProjects\\Tests\\tests1\\CalculatorLibrary\\CalculatorLibrary.csproj"
             }
           }
         }
@@ -5613,5 +5617,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\mehdi\\RiderProjects\\Tests\\tests1\\CalculatorLibrary\\CalculatorLibrary.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\mehdi\\RiderProjects\\Tests\\tests1\\CalculatorLibrary\\CalculatorLibrary.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
