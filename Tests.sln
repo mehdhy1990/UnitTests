@@ -4,6 +4,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLibrary", "Calcul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{625E3E6A-194A-4D7B-BB6D-FD80FE6CD3E8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2A7615E6-59C9-48C3-9487-6CBECF4E8021}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests1", "tests1", "{6C617C9E-68A6-4864-AEF1-5F5770CC99D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLibrary", "src\CalculatorLibrary\CalculatorLibrary.csproj", "{17A05FF5-853E-4A0F-8AB4-E1FF345F8D74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "tests1\TestProject1\TestProject1.csproj", "{EAC6B719-7DFB-491D-B519-B0C03E4AD9F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +26,17 @@ Global
 		{625E3E6A-194A-4D7B-BB6D-FD80FE6CD3E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{625E3E6A-194A-4D7B-BB6D-FD80FE6CD3E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{625E3E6A-194A-4D7B-BB6D-FD80FE6CD3E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17A05FF5-853E-4A0F-8AB4-E1FF345F8D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A05FF5-853E-4A0F-8AB4-E1FF345F8D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A05FF5-853E-4A0F-8AB4-E1FF345F8D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A05FF5-853E-4A0F-8AB4-E1FF345F8D74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAC6B719-7DFB-491D-B519-B0C03E4AD9F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC6B719-7DFB-491D-B519-B0C03E4AD9F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC6B719-7DFB-491D-B519-B0C03E4AD9F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC6B719-7DFB-491D-B519-B0C03E4AD9F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{17A05FF5-853E-4A0F-8AB4-E1FF345F8D74} = {2A7615E6-59C9-48C3-9487-6CBECF4E8021}
+		{EAC6B719-7DFB-491D-B519-B0C03E4AD9F3} = {6C617C9E-68A6-4864-AEF1-5F5770CC99D2}
 	EndGlobalSection
 EndGlobal
