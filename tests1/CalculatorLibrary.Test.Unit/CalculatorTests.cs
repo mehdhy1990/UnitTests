@@ -6,38 +6,34 @@ namespace CalculatorLibrary.Test.Unit;
 public class CalculatorTests : IDisposable
 {
     private readonly Calculator _sut = new();
-   private readonly ITestOutputHelper _testOutputHelper;
+    private readonly ITestOutputHelper _testOutputHelper;
 
-   public CalculatorTests(ITestOutputHelper testOutputHelper)
-   {
-       _testOutputHelper = testOutputHelper;
-       _testOutputHelper.WriteLine($"Hello from ctor");
-   }
-
-    [Fact]
-    public void Add_ShouldAddTwoNumbers_WhenTwoNumbersAreIntegers()
+    public CalculatorTests(ITestOutputHelper testOutputHelper)
     {
-        //arrange
-        var calculator = new Calculator();
+        _testOutputHelper = testOutputHelper;
+        _testOutputHelper.WriteLine($"Hello from ctor");
+    }
 
-        var result = calculator.Add(4, 5);
+    [Theory]
+    [InlineData(4, 5, 9)]
+    [InlineData(0, 0, 0)]
+    public void Add_ShouldAddTwoNumbers_WhenTwoNumbersAreIntegers(int a, int b, int expected)
+    {
+        var result = _sut.Add(a, b);
         //act
 
         //assert
-        Assert.Equal(9, result);
-    }  
+        Assert.Equal(expected, result);
+    }
+
     [Fact]
     public void Add_ShouldSubtractTwoNumbers_WhenTwoNumbersAreIntegers()
     {
-        //arrange
-        var calculator = new Calculator();
-
-        var result = calculator.Subtract(5, 4);
+        var result = _sut.Subtract(5, 4);
         //act
         _testOutputHelper.WriteLine($"Hello from subtract method");
         //assert
         Assert.Equal(1, result);
-      
     }
 
     public void Dispose()
