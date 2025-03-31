@@ -1,4 +1,5 @@
 using CalculatorLibrary;
+using FluentAssertions;
 using Xunit.Abstractions;
 
 namespace CalculatorLibrary.Test.Unit;
@@ -23,7 +24,8 @@ public class CalculatorTests : IDisposable
         //act
 
         //assert
-        Assert.Equal(expected, result);
+        // Assert.Equal(expected, result);
+        result.Should().Be(expected);
     }
 
     [Fact]
